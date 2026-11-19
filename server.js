@@ -8,8 +8,8 @@
 const PORT = process.env.PORT || 3000;
 
 // The URL used to connect to the PostgreSQL database. It has the shape
-// postgresql://USER:PASSWORD@HOST:PORT/DATABASE. Change the password to match
-// the one you set when you ran schema.sql.
+// postgresql://USER:PASSWORD@HOST:PORT/DATABASE. It comes from the
+// DATABASE_URL environment variable. The default has no password.
 
 const DATABASE_URL =
   process.env.DATABASE_URL || 'postgresql://guessit@localhost:5432/guessit';
